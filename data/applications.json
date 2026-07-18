@@ -1,0 +1,427 @@
+{
+    "1513721401541136553": {
+        "id": "1513721401541136553",
+        "tag": "deanwade0134",
+        "username": "deanwade0134",
+        "avatar": "https://cdn.discordapp.com/avatars/1513721401541136553/6bdbf8faf651d157288c5989e01b46d8.webp",
+        "created": 1784339586573,
+        "status": "Pending",
+        "claimedBy": null,
+        "position": "Tester",
+        "page": 1,
+        "currentQuestion": 0,
+        "ticketId": "1527855708211642370",
+        "submitted": false,
+        "answers": []
+    },
+    "868953164785786900": {
+        "id": "868953164785786900",
+        "tag": "menetric",
+        "username": "menetric",
+        "avatar": "https://cdn.discordapp.com/avatars/868953164785786900/23f9d77e4d34e88cbd465818062cf53d.webp",
+        "created": 1784340261651,
+        "status": "Accepted",
+        "claimedBy": null,
+        "position": "Voice Actor",
+        "page": 1,
+        "currentQuestion": 0,
+        "ticketId": "1527858539450597457",
+        "submitted": false,
+        "answers": [
+            {
+                "question": "Age",
+                "answer": "16",
+                "attachments": []
+            },
+            {
+                "question": "Timezone",
+                "answer": "PDT",
+                "attachments": []
+            },
+            {
+                "question": "Activity",
+                "answer": "Everyday of the week",
+                "attachments": []
+            },
+            {
+                "question": "Microphone",
+                "answer": "my phone",
+                "attachments": []
+            },
+            {
+                "question": "Experience",
+                "answer": "no",
+                "attachments": []
+            },
+            {
+                "question": "Languages",
+                "answer": "english",
+                "attachments": []
+            },
+            {
+                "question": "Emotion",
+                "answer": "i change the tone of my voice",
+                "attachments": []
+            },
+            {
+                "question": "Quality",
+                "answer": "No clue",
+                "attachments": []
+            },
+            {
+                "question": "Direction",
+                "answer": "sure",
+                "attachments": []
+            },
+            {
+                "question": "Availability",
+                "answer": "yes",
+                "attachments": []
+            },
+            {
+                "question": "Teamwork",
+                "answer": "yes",
+                "attachments": []
+            },
+            {
+                "question": "Why You?",
+                "answer": "Because shark said i have a good voice",
+                "attachments": []
+            }
+        ]
+    },
+    "1454332460895830162": {
+        "id": "1454332460895830162",
+        "tag": "6thatboy7_16231",
+        "username": "6thatboy7_16231",
+        "avatar": "https://cdn.discordapp.com/avatars/1454332460895830162/3dba7dbb4d7f22044ed49e74b301bae6.webp",
+        "created": 1784341289537,
+        "status": "Accepted",
+        "claimedBy": null,
+        "position": "Tester",
+        "page": 1,
+        "currentQuestion": 0,
+        "ticketId": "1527862851258155018",
+        "submitted": false,
+        "answers": [
+            {
+                "question": "Age",
+                "answer": "16",
+                "attachments": []
+            },
+            {
+                "question": "Timezone",
+                "answer": "ET",
+                "attachments": []
+            },
+            {
+                "question": "Activity",
+                "answer": "3-4",
+                "attachments": []
+            },
+            {
+                "question": "Experience",
+                "answer": "NO",
+                "attachments": []
+            },
+            {
+                "question": "Devices",
+                "answer": "pc",
+                "attachments": []
+            },
+            {
+                "question": "Bug Reports",
+                "answer": "go in the games planned  order covering all the levels menus and features of the game. Such as                                                                                          Gameplay bugs (e.g., walking through walls, mission failures)\nGraphical bugs (e.g., texture glitches, animation errors)                                                                                            \nAudio bugs (e.g., missing sound effects)\n\nUI/UX bugs (e.g., unresponsive buttons, navigation issues)",
+                "attachments": []
+            },
+            {
+                "question": "Reproducing",
+                "answer": "it usually means you’re missing the exact conditions that the player had — such as specific hardware, OS, settings, save state, sequence of actions, or timing",
+                "attachments": []
+            },
+            {
+                "question": "Priority",
+                "answer": "evaluating their impact, severity, frequency, business risk, and user experience, using structured methods like priority levels, MoSCoW, or RICE scoring.",
+                "attachments": []
+            },
+            {
+                "question": "Documents",
+                "answer": "yes",
+                "attachments": []
+            },
+            {
+                "question": "Testing",
+                "answer": "ensures they work correctly, meet quality standards, and do not disrupt existing functionality before release.",
+                "attachments": []
+            },
+            {
+                "question": "Feedback",
+                "answer": "yes",
+                "attachments": []
+            },
+            {
+                "question": "Why You?",
+                "answer": "Because i have alot of freetime and i want to start posting on u and the great thing u could become and u dont want to end up like other games and copy there layout and have something very special with the people who play it",
+                "attachments": []
+            }
+        ]
+    },
+    "889641605294850100": {
+        "id": "889641605294850100",
+        "tag": "skatbooter",
+        "username": "skatbooter",
+        "avatar": "https://cdn.discordapp.com/avatars/889641605294850100/dab90f2b62e4c0d15b0d82e8656c5a22.webp",
+        "created": 1784341750675,
+        "status": "Pending",
+        "claimedBy": null,
+        "position": "Tester",
+        "page": 1,
+        "currentQuestion": 0,
+        "ticketId": "1527864784475787364",
+        "submitted": false,
+        "answers": [
+            {
+                "question": "Age",
+                "answer": "18",
+                "attachments": []
+            },
+            {
+                "question": "Timezone",
+                "answer": "EDT",
+                "attachments": []
+            },
+            {
+                "question": "Activity",
+                "answer": "pretty active g",
+                "attachments": []
+            },
+            {
+                "question": "Experience",
+                "answer": "Nope but I’m awesome",
+                "attachments": []
+            },
+            {
+                "question": "Devices",
+                "answer": "Pc and mobile g",
+                "attachments": []
+            },
+            {
+                "question": "Bug Reports",
+                "answer": "Tell shark",
+                "attachments": []
+            },
+            {
+                "question": "Reproducing",
+                "answer": "Check logs",
+                "attachments": []
+            },
+            {
+                "question": "Priority",
+                "answer": "u compare how bad it impacts the game vs how it affects the players",
+                "attachments": []
+            },
+            {
+                "question": "Documents",
+                "answer": "yea ofc g",
+                "attachments": []
+            }
+        ]
+    },
+    "1392805644922392586": {
+        "id": "1392805644922392586",
+        "tag": "notconsmainbutclose",
+        "username": "notconsmainbutclose",
+        "avatar": "https://cdn.discordapp.com/avatars/1392805644922392586/e735f9c8110053799f002912435c77aa.webp",
+        "created": 1784376855322,
+        "status": "Pending",
+        "claimedBy": null,
+        "position": "Media Manager",
+        "page": 1,
+        "currentQuestion": 0,
+        "ticketId": "1528012027182973080",
+        "submitted": false,
+        "answers": [
+            {
+                "question": "Discord Username",
+                "answer": "Notconmainsalt",
+                "attachments": []
+            },
+            {
+                "question": "Roblox Username",
+                "answer": "Bac0ned_101",
+                "attachments": []
+            },
+            {
+                "question": "Age",
+                "answer": "13",
+                "attachments": []
+            },
+            {
+                "question": "Country",
+                "answer": "Nz",
+                "attachments": []
+            },
+            {
+                "question": "Time Zone",
+                "answer": "Gmt 12",
+                "attachments": []
+            },
+            {
+                "question": "Weekly Hours",
+                "answer": "6-9",
+                "attachments": []
+            },
+            {
+                "question": "Languages",
+                "answer": "English but learning spanish",
+                "attachments": []
+            },
+            {
+                "question": "About Yourself",
+                "answer": "I am a confident young person who believes that people who use their voices are strong and confident",
+                "attachments": []
+            },
+            {
+                "question": "Why Media Manager?",
+                "answer": "Because yall actually need one ngl",
+                "attachments": []
+            },
+            {
+                "question": "Galaxy Games",
+                "answer": "The potential and area of genre it is in of roblox games",
+                "attachments": []
+            },
+            {
+                "question": "Media Experience",
+                "answer": "I have no experience in other servers with media, however I run my own tiktok that posts edits",
+                "attachments": []
+            },
+            {
+                "question": "Best Projects",
+                "answer": "Not many",
+                "attachments": []
+            },
+            {
+                "question": "Trust",
+                "answer": "I believe that media is a voice is popularity, given that thought i can commit to this role",
+                "attachments": []
+            },
+            {
+                "question": "Main Responsibility",
+                "answer": "Handling all sorts of media, what's appropriate and not as well as supporting other 3rd party content creators making media based on the game",
+                "attachments": []
+            },
+            {
+                "question": "Brand Identity",
+                "answer": "I would identify the appropriate measures needed for a good face and brand. Also rejecting any controversy dealing with the type of media.",
+                "attachments": []
+            },
+            {
+                "question": "Social Media",
+                "answer": "Tiktok, Instagram and other discord servers. But I believe tiktok would be most successful due to tiktok pushing out videos more frequently and more fairly compared to YouTube.",
+                "attachments": []
+            },
+            {
+                "question": "Increase Engagement",
+                "answer": "Make videos, dedicate my time and push out as much videos as needed",
+                "attachments": []
+            },
+            {
+                "question": "Campaign Success",
+                "answer": "If there's a spike in players or people joining the server",
+                "attachments": []
+            },
+            {
+                "question": "No Updates",
+                "answer": "Continue pushing out tutorials or videos about the fame",
+                "attachments": []
+            },
+            {
+                "question": "Negative Trailer",
+                "answer": "Depending on the feedback, I would respond with a short and quick apology. I would also try and create a new trailer",
+                "attachments": []
+            },
+            {
+                "question": "False Information",
+                "answer": "I give up bro its like 12am in the morning😭😭",
+                "attachments": []
+            }
+        ]
+    },
+    "838989595504279603": {
+        "id": "838989595504279603",
+        "tag": "gamer_anup",
+        "username": "gamer_anup",
+        "avatar": "https://cdn.discordapp.com/avatars/838989595504279603/3fce7e4dda6f7e1e3e83bd352c68db57.webp",
+        "created": 1784376998991,
+        "status": "Pending",
+        "claimedBy": null,
+        "position": "Scripter",
+        "page": 1,
+        "currentQuestion": 0,
+        "ticketId": "1528012626251092170",
+        "submitted": false,
+        "answers": [
+            {
+                "question": "Age",
+                "answer": "18",
+                "attachments": []
+            },
+            {
+                "question": "Timezone",
+                "answer": "GMT+5:45",
+                "attachments": []
+            },
+            {
+                "question": "Activity",
+                "answer": "like 3 to 5hr each day",
+                "attachments": []
+            },
+            {
+                "question": "Languages",
+                "answer": "lua only for now and little bit of python",
+                "attachments": []
+            },
+            {
+                "question": "Experience",
+                "answer": "yes i have done some like making inventory stuffs just for some personal stuffs",
+                "attachments": []
+            },
+            {
+                "question": "Production",
+                "answer": "if the script breks in production then we just need to undo the update or stop the server, then find the error and fix it there is more to do as u need to have ur laptop running in the same setting as of server as well idk if u get what i mean but yea",
+                "attachments": []
+            },
+            {
+                "question": "Debugging",
+                "answer": "i havent solved a bug for an actual game but when i was making one lets say trying to make one the i had made an inventory ui and stuffs and some animation but it just didnt work and the character' s usuall animation would just break it took a lot of time to solve it",
+                "attachments": []
+            },
+            {
+                "question": "Git",
+                "answer": "yes a little bit doesnt it mean like reverting it back to where it was before when u encounter some bugs",
+                "attachments": []
+            },
+            {
+                "question": "Reviews",
+                "answer": "hmm to handle code reviews i would just thank the person for notifying me the about the problems in the code and then rechecking the part that the person was taling about and fixing it",
+                "attachments": []
+            },
+            {
+                "question": "Requirements",
+                "answer": "if the requirements were unclear then i would just ask the lead developer or the owner about what he actuall wanna do or if they are offline just think of a new thing and ask them if its good or not if not than rip i got to do it again if not then i would be proud of myself",
+                "attachments": []
+            },
+            {
+                "question": "Teamwork",
+                "answer": "yes",
+                "attachments": []
+            },
+            {
+                "question": "Why You?",
+                "answer": "you should choose me cause i am prety descent in coding i am versatile and diligent as well",
+                "attachments": []
+            }
+        ]
+    }
+}

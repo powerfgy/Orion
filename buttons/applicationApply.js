@@ -24,14 +24,14 @@ module.exports = {
             .setPlaceholder("Choose the position you're applying for...")
 .addOptions([
     {
-        label: "Scripter",
-        value: "Scripter",
-        emoji: "💻"
+    label: "Scripter",
+    value: "Scripter",
+    emoji: "💻"
     },
-    {
-        label: "Builder",
-        value: "Builder",
-        emoji: "🏗️"
+        {
+    label: "Builder",
+    value: "Builder",
+    emoji: "🏗"
     },
     {
         label: "GUI Designer",
@@ -52,11 +52,6 @@ module.exports = {
         label: "Video Editor",
         value: "Video Editor",
         emoji: "🎬"
-    },
-    {
-        label: "Tester",
-        value: "Tester",
-        emoji: "🧪"
     },
     {
         label: "Voice Actor",
@@ -83,26 +78,21 @@ module.exports = {
         value: "Animator",
         emoji: "🎥"
     },
-    {
-        label: "Staff Supervisor",
-        value: "Staff Supervisor",
-        emoji: "🛡️"
-    },
-    {
-        label: "Community Manager",
-        value: "Community Manager",
-        emoji: "🌍"
-    },
-    {
-        label: "Event Manager",
-        value: "Event Manager",
-        emoji: "🎉"
-    },
-    {
+   {
         label: "Media Manager",
         value: "Media Manager",
         emoji: "📢"
-    }
+    },
+       {
+        label: "Tester",
+        value: "Tester",
+        emoji: "🧪"
+    },
+    {
+    label: "Trial Staff",
+    value: "Trial Staff",
+    emoji: "🛡️"
+    },
 ]);
 
 const row = new ActionRowBuilder().addComponents(menu);

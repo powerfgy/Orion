@@ -1,54 +1,57 @@
 const {
     EmbedBuilder,
-    PermissionsBitField
 } = require("discord.js");
 
-const Roles = require("../config/roles");
 const Channels = require("../config/channels");
 const Manager = require("../utils/applicationManager");
 
 module.exports = {
+    customId: "application_accept:",
 
-   customId: "application_accept:",
+    async execute(interaction) {
 
-async execute(interaction) {
+        const allowedUsers = [
+            "1302435407681687613",
+            "1417278826609901678",
+            "1220824256032804924",
+            "1485437436208087070",
+            "1531222917462102177"
+        ];
 
-    await interaction.deferUpdate();
-
-    if (
-
-            !interaction.member.roles.cache.has(Roles.OWNER) &&
-            !interaction.member.roles.cache.has(Roles.COMMUNITY_MANAGER) &&
-            !interaction.member.roles.cache.has(Roles.LEAD_DEV)
-
-        ) {
-
-return interaction.editReply({
-    content: "❌ You cannot use this button.",
-    embeds: [],
-    components: []
-});
+        // Permission check FIRST
+        if (!allowedUsers.includes(interaction.user.id)) {
+            return interaction.reply({
+                content: "❌ You cannot use this button.",
+                ephemeral: true,
+            });
         }
 
-       const userId = interaction.customId.split(":")[1];
-       console.log("========== BUTTON ==========");
-console.log("Button:", interaction.customId);
-console.log("User ID:", userId);
+        // Only defer after we know they're allowed
+        await interaction.deferUpdate();
 
-const application = Manager.get(userId);
+        const userId = interaction.customId.split(":")[1];
 
-console.log("Application:", application);
+        console.log("========== BUTTON ==========");
+        console.log("Button:", interaction.customId);
+        console.log("User ID:", userId);
+        console.log("JSON CONTENT:");
+        console.log(Manager.getAll());
 
-if (!application) {
-    console.log("❌ Manager.get() returned undefined");
-return interaction.editReply({
-    content: "❌ Application not found.",
-    embeds: [],
-    components: []
-});
-}
+        console.log("Looking for:", userId);
+        const application = Manager.get(userId);
 
-console.log("✅ Application found");
+        console.log("Application:", application);
+
+        if (!application) {
+            console.log("❌ Manager.get() returned undefined");
+
+            return interaction.followUp({
+                content: "❌ Application not found.",
+                ephemeral: true,
+            });
+        }
+
+        console.log("✅ Application found");
 
         Manager.setStatus(userId, "Accepted");
 
@@ -86,11 +89,16 @@ A member of the Orion staff team will contact you shortly.`
             } catch {}
 
         }
+const guildChannels = Channels[interaction.guild.id];
 
-        const acceptedChannel = interaction.guild.channels.cache.get(
-            Channels.ACCEPTED
-        );
+const acceptedChannel = interaction.guild.channels.cache.get(
+    guildChannels.ACCEPTED
+);
 
+console.log("Guild channels:", guildChannels);
+console.log("Accepted ID:", guildChannels.ACCEPTED);
+console.log("Accepted channel:", acceptedChannel?.name);
+console.log("Sending to accepted channel...");
         await acceptedChannel.send({
 
             embeds: [
@@ -139,17 +147,14 @@ A member of the Orion staff team will contact you shortly.`
                     `accepted-${application.username.toLowerCase()}`
                 );
 
-                await ticket.permissionOverwrites.edit(
+console.log("Member:", member?.user?.tag);
 
-                    userId,
-
-                    {
-
-                        SendMessages: false
-
-                    }
-
-                );
+await ticket.permissionOverwrites.edit(
+    userId,
+    {
+        SendMessages: false
+    }
+);
 
                 await ticket.send({
 
@@ -182,21 +187,16 @@ Your application has been accepted.`
 await interaction.editReply({
 
     embeds: [
-
         EmbedBuilder.from(interaction.message.embeds[0])
-
             .setColor("#57F287")
-
             .setFooter({
                 text: `Accepted by ${interaction.user.tag}`
             })
-
     ],
 
     components: []
 
 });
 
-    }
-
+}
 };

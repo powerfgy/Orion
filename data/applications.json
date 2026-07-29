@@ -1,425 +1,266 @@
 {
-    "1513721401541136553": {
-        "id": "1513721401541136553",
-        "tag": "deanwade0134",
-        "username": "deanwade0134",
-        "avatar": "https://cdn.discordapp.com/avatars/1513721401541136553/6bdbf8faf651d157288c5989e01b46d8.webp",
-        "created": 1784339586573,
-        "status": "Pending",
-        "claimedBy": null,
-        "position": "Tester",
-        "page": 1,
-        "currentQuestion": 0,
-        "ticketId": "1527855708211642370",
-        "submitted": false,
-        "answers": []
-    },
-    "868953164785786900": {
-        "id": "868953164785786900",
-        "tag": "menetric",
-        "username": "menetric",
-        "avatar": "https://cdn.discordapp.com/avatars/868953164785786900/23f9d77e4d34e88cbd465818062cf53d.webp",
-        "created": 1784340261651,
-        "status": "Accepted",
-        "claimedBy": null,
-        "position": "Voice Actor",
-        "page": 1,
-        "currentQuestion": 0,
-        "ticketId": "1527858539450597457",
-        "submitted": false,
-        "answers": [
-            {
-                "question": "Age",
-                "answer": "16",
-                "attachments": []
-            },
-            {
-                "question": "Timezone",
-                "answer": "PDT",
-                "attachments": []
-            },
-            {
-                "question": "Activity",
-                "answer": "Everyday of the week",
-                "attachments": []
-            },
-            {
-                "question": "Microphone",
-                "answer": "my phone",
-                "attachments": []
-            },
-            {
-                "question": "Experience",
-                "answer": "no",
-                "attachments": []
-            },
-            {
-                "question": "Languages",
-                "answer": "english",
-                "attachments": []
-            },
-            {
-                "question": "Emotion",
-                "answer": "i change the tone of my voice",
-                "attachments": []
-            },
-            {
-                "question": "Quality",
-                "answer": "No clue",
-                "attachments": []
-            },
-            {
-                "question": "Direction",
-                "answer": "sure",
-                "attachments": []
-            },
-            {
-                "question": "Availability",
-                "answer": "yes",
-                "attachments": []
-            },
-            {
-                "question": "Teamwork",
-                "answer": "yes",
-                "attachments": []
-            },
-            {
-                "question": "Why You?",
-                "answer": "Because shark said i have a good voice",
-                "attachments": []
-            }
-        ]
-    },
     "1454332460895830162": {
         "id": "1454332460895830162",
         "tag": "6thatboy7_16231",
         "username": "6thatboy7_16231",
-        "avatar": "https://cdn.discordapp.com/avatars/1454332460895830162/3dba7dbb4d7f22044ed49e74b301bae6.webp",
-        "created": 1784341289537,
-        "status": "Accepted",
-        "claimedBy": null,
-        "position": "Tester",
-        "page": 1,
-        "currentQuestion": 0,
-        "ticketId": "1527862851258155018",
-        "submitted": false,
-        "answers": [
-            {
-                "question": "Age",
-                "answer": "16",
-                "attachments": []
-            },
-            {
-                "question": "Timezone",
-                "answer": "ET",
-                "attachments": []
-            },
-            {
-                "question": "Activity",
-                "answer": "3-4",
-                "attachments": []
-            },
-            {
-                "question": "Experience",
-                "answer": "NO",
-                "attachments": []
-            },
-            {
-                "question": "Devices",
-                "answer": "pc",
-                "attachments": []
-            },
-            {
-                "question": "Bug Reports",
-                "answer": "go in the games planned  order covering all the levels menus and features of the game. Such as                                                                                          Gameplay bugs (e.g., walking through walls, mission failures)\nGraphical bugs (e.g., texture glitches, animation errors)                                                                                            \nAudio bugs (e.g., missing sound effects)\n\nUI/UX bugs (e.g., unresponsive buttons, navigation issues)",
-                "attachments": []
-            },
-            {
-                "question": "Reproducing",
-                "answer": "it usually means you’re missing the exact conditions that the player had — such as specific hardware, OS, settings, save state, sequence of actions, or timing",
-                "attachments": []
-            },
-            {
-                "question": "Priority",
-                "answer": "evaluating their impact, severity, frequency, business risk, and user experience, using structured methods like priority levels, MoSCoW, or RICE scoring.",
-                "attachments": []
-            },
-            {
-                "question": "Documents",
-                "answer": "yes",
-                "attachments": []
-            },
-            {
-                "question": "Testing",
-                "answer": "ensures they work correctly, meet quality standards, and do not disrupt existing functionality before release.",
-                "attachments": []
-            },
-            {
-                "question": "Feedback",
-                "answer": "yes",
-                "attachments": []
-            },
-            {
-                "question": "Why You?",
-                "answer": "Because i have alot of freetime and i want to start posting on u and the great thing u could become and u dont want to end up like other games and copy there layout and have something very special with the people who play it",
-                "attachments": []
-            }
-        ]
-    },
-    "889641605294850100": {
-        "id": "889641605294850100",
-        "tag": "skatbooter",
-        "username": "skatbooter",
-        "avatar": "https://cdn.discordapp.com/avatars/889641605294850100/dab90f2b62e4c0d15b0d82e8656c5a22.webp",
-        "created": 1784341750675,
-        "status": "Pending",
-        "claimedBy": null,
-        "position": "Tester",
-        "page": 1,
-        "currentQuestion": 0,
-        "ticketId": "1527864784475787364",
-        "submitted": false,
-        "answers": [
-            {
-                "question": "Age",
-                "answer": "18",
-                "attachments": []
-            },
-            {
-                "question": "Timezone",
-                "answer": "EDT",
-                "attachments": []
-            },
-            {
-                "question": "Activity",
-                "answer": "pretty active g",
-                "attachments": []
-            },
-            {
-                "question": "Experience",
-                "answer": "Nope but I’m awesome",
-                "attachments": []
-            },
-            {
-                "question": "Devices",
-                "answer": "Pc and mobile g",
-                "attachments": []
-            },
-            {
-                "question": "Bug Reports",
-                "answer": "Tell shark",
-                "attachments": []
-            },
-            {
-                "question": "Reproducing",
-                "answer": "Check logs",
-                "attachments": []
-            },
-            {
-                "question": "Priority",
-                "answer": "u compare how bad it impacts the game vs how it affects the players",
-                "attachments": []
-            },
-            {
-                "question": "Documents",
-                "answer": "yea ofc g",
-                "attachments": []
-            }
-        ]
-    },
-    "1392805644922392586": {
-        "id": "1392805644922392586",
-        "tag": "notconsmainbutclose",
-        "username": "notconsmainbutclose",
-        "avatar": "https://cdn.discordapp.com/avatars/1392805644922392586/e735f9c8110053799f002912435c77aa.webp",
-        "created": 1784376855322,
+        "avatar": "https://cdn.discordapp.com/avatars/1454332460895830162/41cd30529b375e1227a2226fa53d0a2d.webp",
+        "created": 1785241639101,
         "status": "Pending",
         "claimedBy": null,
         "position": "Media Manager",
         "page": 1,
         "currentQuestion": 0,
-        "ticketId": "1528012027182973080",
+        "ticketId": "1531639197004333097",
         "submitted": false,
         "answers": [
             {
                 "question": "Discord Username",
-                "answer": "Notconmainsalt",
+                "answer": "Nyahh Stephan Vervain",
                 "attachments": []
             },
             {
                 "question": "Roblox Username",
-                "answer": "Bac0ned_101",
+                "answer": "little_zekk",
                 "attachments": []
             },
             {
                 "question": "Age",
-                "answer": "13",
+                "answer": "17",
                 "attachments": []
             },
             {
                 "question": "Country",
-                "answer": "Nz",
+                "answer": "America",
                 "attachments": []
             },
             {
                 "question": "Time Zone",
-                "answer": "Gmt 12",
+                "answer": "ET",
                 "attachments": []
             },
             {
                 "question": "Weekly Hours",
-                "answer": "6-9",
+                "answer": "10+",
                 "attachments": []
             },
             {
                 "question": "Languages",
-                "answer": "English but learning spanish",
+                "answer": "English",
                 "attachments": []
             },
             {
                 "question": "About Yourself",
-                "answer": "I am a confident young person who believes that people who use their voices are strong and confident",
+                "answer": "i like creating and having fun and jst leading and directing ppl towards a great path",
                 "attachments": []
             },
             {
                 "question": "Why Media Manager?",
-                "answer": "Because yall actually need one ngl",
+                "answer": "Because i love creating and content is what inspires me and Damien has had a really good influence with helping me sigh up",
                 "attachments": []
             },
             {
                 "question": "Galaxy Games",
-                "answer": "The potential and area of genre it is in of roblox games",
+                "answer": "AS I SAID THOUSANDS OF TIME, i see great things happening for this community.",
                 "attachments": []
             },
             {
                 "question": "Media Experience",
-                "answer": "I have no experience in other servers with media, however I run my own tiktok that posts edits",
+                "answer": "I have no experience in media marketing but i do have content creation experience.",
                 "attachments": []
             },
             {
                 "question": "Best Projects",
-                "answer": "Not many",
+                "answer": "tvl2 content",
                 "attachments": []
             },
             {
                 "question": "Trust",
-                "answer": "I believe that media is a voice is popularity, given that thought i can commit to this role",
+                "answer": "Because i believe this community has the potential to do do great things",
                 "attachments": []
             },
             {
                 "question": "Main Responsibility",
-                "answer": "Handling all sorts of media, what's appropriate and not as well as supporting other 3rd party content creators making media based on the game",
+                "answer": "The primary responsibility of a Media Manager is to plan, execute, and oversee a company’s media strategy across all platforms to build and maintain a strong brand presence, enhance reputation, and achieve marketing objectives",
                 "attachments": []
             },
             {
                 "question": "Brand Identity",
-                "answer": "I would identify the appropriate measures needed for a good face and brand. Also rejecting any controversy dealing with the type of media.",
+                "answer": "Maintaining brand consistency means presenting your brand in the same way—visually, tonally, and experientially—across all channels, from social media to websites, emails, and offline touchpoints",
                 "attachments": []
             },
             {
                 "question": "Social Media",
-                "answer": "Tiktok, Instagram and other discord servers. But I believe tiktok would be most successful due to tiktok pushing out videos more frequently and more fairly compared to YouTube.",
+                "answer": "Galaxy Games Inc. should focus on TikTok, YouTube, Facebook, and X (Twitter), with Instagram and Twitch as strong secondary channels, to maximize discovery, engagement, and community growth.",
                 "attachments": []
             },
             {
                 "question": "Increase Engagement",
-                "answer": "Make videos, dedicate my time and push out as much videos as needed",
+                "answer": "Boosting social media engagement requires knowing your audience, creating interactive content, posting consistently, and fostering genuine community connections.",
                 "attachments": []
             },
             {
                 "question": "Campaign Success",
-                "answer": "If there's a spike in players or people joining the server",
+                "answer": "Success in media campaigns is measured by aligning clear goals with key performance indicators (KPIs) and tracking metrics that reflect audience engagement, conversions, and overall impact.",
                 "attachments": []
             },
             {
                 "question": "No Updates",
-                "answer": "Continue pushing out tutorials or videos about the fame",
+                "answer": "Schedule interval updates even if content is minimal (e.g., weekly or biweekly). Consistency reinforces trust and keeps stakeholders aligned.",
                 "attachments": []
             },
             {
                 "question": "Negative Trailer",
-                "answer": "Depending on the feedback, I would respond with a short and quick apology. I would also try and create a new trailer",
+                "answer": "If a trailer receives negative feedback shortly after release, the key is to acknowledge, address, and turn the situation into an opportunity for improvement.",
                 "attachments": []
             },
             {
                 "question": "False Information",
-                "answer": "I give up bro its like 12am in the morning😭😭",
-                "attachments": []
-            }
-        ]
-    },
-    "838989595504279603": {
-        "id": "838989595504279603",
-        "tag": "gamer_anup",
-        "username": "gamer_anup",
-        "avatar": "https://cdn.discordapp.com/avatars/838989595504279603/3fce7e4dda6f7e1e3e83bd352c68db57.webp",
-        "created": 1784376998991,
-        "status": "Pending",
-        "claimedBy": null,
-        "position": "Scripter",
-        "page": 1,
-        "currentQuestion": 0,
-        "ticketId": "1528012626251092170",
-        "submitted": false,
-        "answers": [
-            {
-                "question": "Age",
-                "answer": "18",
+                "answer": "If you see false information about a game spreading rapidly online, the most effective approach is to stop the spread, verify the facts, and share corrections without repeating the falsehood.",
                 "attachments": []
             },
             {
-                "question": "Timezone",
-                "answer": "GMT+5:45",
+                "question": "Developer Leak",
+                "answer": "If a developer accidentally shares confidential information publicly, the priority is to contain the breach, act transparently, and prevent further damage.",
                 "attachments": []
             },
             {
-                "question": "Activity",
-                "answer": "like 3 to 5hr each day",
+                "question": "Fan Content",
+                "answer": "That’s a wonderful situation to be in — it means your community is thriving creatively!",
                 "attachments": []
             },
             {
-                "question": "Languages",
-                "answer": "lua only for now and little bit of python",
+                "question": "Wrong Announcement",
+                "answer": "If a scheduled announcement contains incorrect information after publication, the priority is to act quickly, correct the record transparently, and minimize harm to credibility and trust.",
                 "attachments": []
             },
             {
-                "question": "Experience",
-                "answer": "yes i have done some like making inventory stuffs just for some personal stuffs",
+                "question": "Delayed Update",
+                "answer": "This short delay will allow us to polish features, fix last-minute bugs, and make sure your experience is as smooth and enjoyable as possible. We believe this extra care will make the update worth the wait.",
                 "attachments": []
             },
             {
-                "question": "Production",
-                "answer": "if the script breks in production then we just need to undo the update or stop the server, then find the error and fix it there is more to do as u need to have ur laptop running in the same setting as of server as well idk if u get what i mean but yea",
+                "question": "Feature Reveal",
+                "answer": "Share cryptic visuals or short videos hinting at the feature’s benefits without revealing it fully.                                 \nUse a countdown on social media or your website to build urgency.                  \nDrop progressive clues over several days so followers piece the puzzle together.",
                 "attachments": []
             },
             {
-                "question": "Debugging",
-                "answer": "i havent solved a bug for an actual game but when i was making one lets say trying to make one the i had made an inventory ui and stuffs and some animation but it just didnt work and the character' s usuall animation would just break it took a lot of time to solve it",
+                "question": "Content Planning",
+                "answer": "Clarify the purpose: brand awareness, engagement, sales, or education.",
                 "attachments": []
             },
             {
-                "question": "Git",
-                "answer": "yes a little bit doesnt it mean like reverting it back to where it was before when u encounter some bugs",
+                "question": "Announcement Frequency",
+                "answer": "The ideal posting frequency for announcements depends on your platform, audience, and goals, but research shows that consistency matters more than sheer volume",
                 "attachments": []
             },
             {
-                "question": "Reviews",
-                "answer": "hmm to handle code reviews i would just thank the person for notifying me the about the problems in the code and then rechecking the part that the person was taling about and fixing it",
+                "question": "Best Content",
+                "answer": "The most engaging Roblox communities combine quick, rewarding gameplay with strong social and interactive features, plus active community management tools.",
                 "attachments": []
             },
             {
-                "question": "Requirements",
-                "answer": "if the requirements were unclear then i would just ask the lead developer or the owner about what he actuall wanna do or if they are offline just think of a new thing and ask them if its good or not if not than rip i got to do it again if not then i would be proud of myself",
+                "question": "Organizing Media",
+                "answer": "to keep screenshots, trailers, and promotional artwork in one place and easy to find, you should combine clear folder structures, consistent naming conventions, and version control",
                 "attachments": []
             },
             {
-                "question": "Teamwork",
-                "answer": "yes",
+                "question": "Working With Team",
+                "answer": "To work effectively with both the Video Director and the Social Media Manager, you need to align creative vision with distribution strategy, while keeping communication clear and workflows efficient.",
                 "attachments": []
             },
             {
-                "question": "Why You?",
-                "answer": "you should choose me cause i am prety descent in coding i am versatile and diligent as well",
+                "question": "Developers",
+                "answer": "Collaborating with developers is about bridging the gap between high-level vision and technical execution. The key is to align goals, communicate clearly, and value their expertise.",
+                "attachments": []
+            },
+            {
+                "question": "Community Manager",
+                "answer": "Working alongside a Community Manager (CM) requires both strategic coordination and operational alignment. Here’s a structured approach to ensure productive collaboration within a team:",
+                "attachments": []
+            },
+            {
+                "question": "Creative Director",
+                "answer": "Working alongside a Creative Director requires a combination of strategic alignment, communication, and execution skills to translate vision into tangible outcomes. Here is a structured approach:",
+                "attachments": []
+            },
+            {
+                "question": "Team Disagreements",
+                "answer": "The statement means that collaborating with a Creative Director requires aligning on goals, communicating effectively, and being able to implement ideas successfully.",
+                "attachments": []
+            },
+            {
+                "question": "Rejected Idea",
+                "answer": "Stay objective: Avoid taking rejection personally. Focus on the idea, not on individual opinions.",
+                "attachments": []
+            },
+            {
+                "question": "Difficult Project",
+                "answer": "Complex Integration Between Design and Technology: The Creative Director envisioned dynamic, animated components that necessitated custom coding solutions. I worked closely with the design team to translate these artistic ideas into feasible technical implementations without compromising performance.",
+                "attachments": []
+            },
+            {
+                "question": "Mistake",
+                "answer": "During my time working alongside a Creative Director on a high-profile marketing campaign, one mistake I made involved underestimating the prerequisite alignment between design intentions and technical feasibility. Early in the project, the Creative Director proposed a series of intricate, animated interactive elements for the digital platform. Eager to deliver quickly, I initially attempted to implement these features without fully assessing technical limitations, particularly the load times and cross-platform responsiveness. This led to a prototype that was visually impressive but suffered from performance lag on certain devices, which caused tension with both the design team and stakeholders.",
+                "attachments": []
+            },
+            {
+                "question": "Deadlines",
+                "answer": "Effectively managing multiple deadlines requires clear prioritization, planning, and time management strategies to ensure high-priority tasks are completed on time while minimizing stress.",
+                "attachments": []
+            },
+            {
+                "question": "Criticism",
+                "answer": "Handling criticism effectively involves listening objectively, separating the feedback from your self-worth, and using it constructively to improve your work.",
+                "attachments": []
+            },
+            {
+                "question": "Accuracy",
+                "answer": "Accuracy is critical to maintaining credibility; thorough fact-checking, source verification, internal review, and pre-publication quality checks are essential steps before releasing any announcement.",
+                "attachments": []
+            },
+            {
+                "question": "Confidential Files",
+                "answer": "If confidential media files (e.g., videos, images, or other sensitive content) are accidentally leaked, the priority is to contain the breach, assess the damage, and act quickly to protect affected parties and your organization.",
+                "attachments": []
+            },
+            {
+                "question": "Public Image",
+                "answer": "Publicly communicate the company’s commitment to ethical practices, including responsible game development, fair monetization, and transparent data privacy policies.",
+                "attachments": []
+            },
+            {
+                "question": "Marketing Strategy",
+                "answer": "Teaser Content: Share short, intriguing gameplay clips or concept art on TikTok, YouTube Shorts, and Roblox groups. Keep them visually striking and hint at unique features without revealing everything.",
+                "attachments": []
+            },
+            {
+                "question": "Stand Out",
+                "answer": "Core loop innovation: Design a gameplay loop that’s hard to copy — e.g., a hybrid of genres, unique mechanics, or a twist on a popular format",
+                "attachments": []
+            },
+            {
+                "question": "Three Month Goals",
+                "answer": "Audit all current media channels (social, paid ads, PR, partnerships) for performance and consistency.",
+                "attachments": []
+            },
+            {
+                "question": "Long-Term Vision",
+                "answer": "Our long-term vision for our media presence is to build a cohesive, credible, and influential brand narrative that shapes public perception, drives strategic outcomes, and sustains trust over time.",
+                "attachments": []
+            },
+            {
+                "question": "Why Choose You",
+                "answer": "i should be chosen because of my unique skills and my experience",
+                "attachments": []
+            },
+            {
+                "question": "Portfolio",
+                "answer": "i have no previous work",
+                "attachments": []
+            },
+            {
+                "question": "Final Notes",
+                "answer": "if someone is asking for a high role",
                 "attachments": []
             }
         ]

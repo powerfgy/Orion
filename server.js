@@ -4,20 +4,27 @@ const app = express();
 
 app.use(express.json());
 
-// Test route
+// =========================
+// Health Check
+// =========================
 app.get("/", (req, res) => {
-    res.send("DiscordSyncBot API is online!");
+    res.send("Orion API is online!");
 });
 
-// Roblox test endpoint
+// =========================
+// Roblox Ping Test
+// =========================
 app.post("/roblox/ping", (req, res) => {
-    console.log("📩 Request received from Roblox!");
-    console.log(req.body);
 
-    res.json({
+    console.log("========== ROBLOX PING ==========");
+    console.log(req.body);
+    console.log("================================");
+
+    res.status(200).json({
         success: true,
-        message: "Hello Roblox!"
+        message: "Orion received your request!"
     });
+
 });
 
 module.exports = app;

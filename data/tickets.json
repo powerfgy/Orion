@@ -1,0 +1,94 @@
+{
+    "0001": {
+        "ticketNumber": "0001",
+        "creator": "1220786447360196608",
+        "creatorTag": "xj4y15x",
+        "channelId": "1529191774390845481",
+        "type": "question",
+        "createdAt": 1784658130154,
+        "claimedBy": null,
+        "closed": false
+    },
+    "0002": {
+        "ticketNumber": "0002",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1529192021254737922",
+        "type": "staff_report",
+        "createdAt": 1784658189159,
+        "claimedBy": null,
+        "closed": false
+    },
+    "0004": {
+        "ticketNumber": "0004",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1529230096689397931",
+        "type": "interview",
+        "createdAt": 1784667267259,
+        "claimedBy": "1302435407681687613",
+        "closed": true,
+        "closedBy": "1220786447360196608",
+        "closedAt": 1784667360165
+    },
+    "0011": {
+        "ticketNumber": "0011",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1531325237801652405",
+        "type": "interview",
+        "createdAt": 1785166787735,
+        "claimedBy": "1302435407681687613",
+        "closed": true,
+        "closedBy": "1302435407681687613",
+        "closedAt": 1785166818062
+    },
+    "0015": {
+        "ticketNumber": "0015",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1531330114200141906",
+        "type": "interview",
+        "createdAt": 1785167950549,
+        "claimedBy": "1302435407681687613",
+        "closed": true,
+        "closedBy": "1302435407681687613",
+        "closedAt": 1785167959049
+    },
+    "0019": {
+        "ticketNumber": "0019",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1531419765057523902",
+        "type": "interview",
+        "createdAt": 1785189324725,
+        "claimedBy": "1302435407681687613",
+        "closed": true,
+        "closedBy": "1302435407681687613",
+        "closedAt": 1785189328753
+    },
+    "0022": {
+        "ticketNumber": "0022",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1531449491691929670",
+        "type": "interview",
+        "createdAt": 1785196412322,
+        "claimedBy": "1302435407681687613",
+        "closed": true,
+        "closedBy": "1302435407681687613",
+        "closedAt": 1785196417858
+    },
+    "0024": {
+        "ticketNumber": "0024",
+        "creator": "1302435407681687613",
+        "creatorTag": "power_fgy",
+        "channelId": "1531463376255979520",
+        "type": "interview",
+        "createdAt": 1785199722860,
+        "claimedBy": "1531222917462102177",
+        "closed": true,
+        "closedBy": "1531222917462102177",
+        "closedAt": 1785199831367
+    }
+}

@@ -59,8 +59,31 @@ async function createTicket(interaction, position) {
 
     const guild = interaction.guild;
 
-    const category =
-        guild.channels.cache.get(channels.RECRUITMENT_CATEGORY);
+const guildChannels = channels[guild.id];
+
+if (!guildChannels) {
+    throw new Error(`No channel config found for guild ${guild.id}`);
+}
+
+const category = guild.channels.cache.get(
+    guildChannels.RECRUITMENT_CATEGORY
+);
+
+        console.log("Guild:", guild.name);
+
+console.log(
+    "1417278826609901678:",
+    guild.members.cache.has("1417278826609901678")
+);
+
+console.log(
+    guild.members.cache.get("1485437436208087070")
+);
+
+console.log(
+    "1302435407681687613:",
+    guild.members.cache.has("1302435407681687613")
+);
 
     const channel = await guild.channels.create({
 
@@ -69,37 +92,52 @@ async function createTicket(interaction, position) {
         type: ChannelType.GuildText,
 
         parent: category?.id,
+        
 
-        permissionOverwrites: [
-
-            {
-                id: guild.roles.everyone.id,
-                deny: [PermissionFlagsBits.ViewChannel],
-            },
-
-            {
-                id: interaction.user.id,
-                allow: [
-                    PermissionFlagsBits.ViewChannel,
-                    PermissionFlagsBits.SendMessages,
-                    PermissionFlagsBits.ReadMessageHistory,
-                    PermissionFlagsBits.AttachFiles,
-                ],
-            },
-
-            {
-                id: roles.LEAD_DEV,
-                allow: [
-                    PermissionFlagsBits.ViewChannel,
-                    PermissionFlagsBits.SendMessages,
-                    PermissionFlagsBits.ManageMessages,
-                    PermissionFlagsBits.ReadMessageHistory,
-                ],
-            },
-
-        ],
+permissionOverwrites: [
+{
+    id: guild.roles.everyone.id,
+    deny: [PermissionFlagsBits.ViewChannel],
+},
+{
+    id: guild.members.me.id,
+    allow: [
+        PermissionFlagsBits.ViewChannel,
+        PermissionFlagsBits.SendMessages,
+        PermissionFlagsBits.ReadMessageHistory,
+        PermissionFlagsBits.ManageChannels,
+    ],
+},
+{
+    id: interaction.user.id,
+    allow: [
+        PermissionFlagsBits.ViewChannel,
+        PermissionFlagsBits.SendMessages,
+        PermissionFlagsBits.ReadMessageHistory,
+    ],
+},
+]
 
     });
+    console.log(
+    "Bot perms:",
+    channel.permissionsFor(guild.members.me)?.toArray()
+
+);
+console.log(
+    "Bot can view:",
+    channel.permissionsFor(guild.members.me).has(PermissionFlagsBits.ViewChannel)
+);
+
+console.log(
+    "Bot can send:",
+    channel.permissionsFor(guild.members.me).has(PermissionFlagsBits.SendMessages)
+);
+
+console.log(
+    "Bot perms:",
+    channel.permissionsFor(guild.members.me).toArray()
+);
 
     return channel;
 
@@ -265,8 +303,10 @@ async function finishApplication(ticket, user, application) {
 
     const buttons = buildReviewButtons(user.id);
 
-    const reviewChannel =
-        ticket.guild.channels.cache.get(channels.SUBMITTED);
+const guildChannels = channels[ticket.guild.id];
+
+const reviewChannel =
+    ticket.guild.channels.cache.get(guildChannels.SUBMITTED);
 
     if (reviewChannel) {
 
@@ -277,14 +317,6 @@ async function finishApplication(ticket, user, application) {
         });
 
     }
-
-    await ticket.permissionOverwrites.edit(user.id, {
-        SendMessages: false,
-    });
-
-    try {
-        await ticket.setName(`submitted-${user.username}`);
-    } catch {}
 
     const embed = new EmbedBuilder()
         .setColor(0x57F287)
@@ -314,13 +346,21 @@ async function finishApplication(ticket, user, application) {
         time: 10 * 60 * 1000,
     });
 
-    closeCollector.on("collect", async () => {
+closeCollector.on("collect", async () => {
 
-        await ticket.send("🗑️ Closing ticket in **5 seconds**...");
-
-        setTimeout(() => ticket.delete().catch(console.error), 5000);
-
+    await ticket.permissionOverwrites.edit(user.id, {
+        SendMessages: false,
     });
+
+    try {
+        await ticket.setName(`submitted-${user.username}`);
+    } catch {}
+
+    await ticket.send("🗑️ Closing ticket in **5 seconds**...");
+
+    setTimeout(() => ticket.delete().catch(console.error), 5000);
+
+});
 
     closeCollector.on("end", async (_, reason) => {
 

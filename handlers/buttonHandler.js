@@ -5,9 +5,9 @@ const path = require("path");
 
 module.exports = async (interaction) => {
 
-    console.log("🔘 Button clicked:", interaction.customId);
-
     if (!interaction.isButton()) return;
+
+    console.log("🔘 Button clicked:", interaction.customId);
 
     const buttonsPath = path.join(__dirname, "../buttons");
 
@@ -21,7 +21,9 @@ module.exports = async (interaction) => {
 
         let match = false;
 
-        if (
+if (!button.customId) continue;
+
+if (
     button.customId.endsWith("_") ||
     button.customId.endsWith(":")
 ) {
@@ -29,32 +31,46 @@ module.exports = async (interaction) => {
         } else {
             match = interaction.customId === button.customId;
         }
-console.log(
-    "Checking",
-    button.customId,
-    "against",
-    interaction.customId
-);
+
+        console.log(
+            "Checking",
+            button.customId,
+            "against",
+            interaction.customId
+        );
+
         if (!match) continue;
 
         try {
-console.log("✅ Executing", button.customId);
+
+            console.log("✅ Executing", button.customId);
+
             await button.execute(interaction);
 
         } catch (err) {
+    console.error("========== ERROR ==========");
+    console.error(err.stack);
+    console.error("==========================");
 
-            console.error(err);
+            try {
 
-            if (!interaction.replied && !interaction.deferred) {
+                if (interaction.deferred) {
 
-                await interaction.reply({
+                    await interaction.editReply({
+                        content: "❌ Something went wrong while processing that button."
+                    });
 
-                    content: "❌ Something went wrong while processing that button.",
+                } else if (!interaction.replied) {
 
-                    ephemeral: true
+                    await interaction.reply({
+                        content: "❌ Something went wrong while processing that button.",
+                        flags: 64
+                    });
 
-                });
+                }
 
+            } catch (e) {
+                console.error("Failed to send error reply:", e);
             }
 
         }

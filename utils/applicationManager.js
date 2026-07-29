@@ -7,23 +7,7 @@ const DATA_PATH = path.join(__dirname, "../data/applications.json");
 if (!fs.existsSync(DATA_PATH)) {
     fs.writeFileSync(DATA_PATH, JSON.stringify({}, null, 4));
 }
-function setClaim(userId, staffId) {
-    const data = load();
-    if (!data[userId]) return;
 
-    data[userId].claimedBy = staffId;
-
-    save(data);
-}
-
-function clearClaim(userId) {
-    const data = load();
-    if (!data[userId]) return;
-
-    data[userId].claimedBy = null;
-
-    save(data);
-}
 function load() {
     return JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
 }

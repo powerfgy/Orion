@@ -8,14 +8,13 @@ const {
 } = require("discord.js");
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName("applications")
-        .setDescription("Send the staff application panel.")
-        .setDefaultMemberPermissions(
-            PermissionFlagsBits.Administrator
-        ),
-
+data: new SlashCommandBuilder()
+    .setName("applications")
+    .setDescription("Send the staff application panel.")
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+   
     async execute(interaction) {
+
 
         console.log("A");
 
@@ -28,19 +27,20 @@ module.exports = {
 We're currently looking for talented people to join our team.
 
 Available positions include:
-
-💻 Scripter
+💻Scripter
 🏗 Builder
 🖥 GUI Designer
 🎨 Artist
 🖌 Lead Artist
 🎬 Video Editor
-🧪 Tester
 🎙 Voice Actor
 🎵 Sound Designer
 ✨ VFX Artist
 🎮 Gameplay Designer
-
+🎥 Animator
+📢 Media Manager
+🧪 Tester
+🛡 Trial Staff
 
 Click **Apply** below to start your application.
 

@@ -1,6 +1,5 @@
-const { EmbedBuilder } = require("discord.js");
+ const { EmbedBuilder } = require("discord.js");
 
-const Roles = require("../config/roles");
 const Manager = require("../utils/applicationManager");
 
 module.exports = {
@@ -9,22 +8,28 @@ module.exports = {
 
     async execute(interaction) {
 
-        await interaction.deferUpdate();
+const allowedUsers = [
+    "1302435407681687613",
+    "1417278826609901678",
+    "1220824256032804924",
+    "1485437436208087070",
+    "1531222917462102177"
+];
 
-        if (
-            !interaction.member.roles.cache.has(Roles.OWNER) &&
-            !interaction.member.roles.cache.has(Roles.COMMUNITY_MANAGER) &&
-            !interaction.member.roles.cache.has(Roles.LEAD_DEV)
-        ) {
-            return interaction.followUp({
-                content: "❌ You can't claim applications.",
-                ephemeral: true
-            });
-        }
+if (!allowedUsers.includes(interaction.user.id)) {
+    return interaction.reply({
+        content: "❌ You cannot use this button.",
+        ephemeral: true
+    });
+}
+
+await interaction.deferUpdate();
 
         const userId = interaction.customId.split(":")[1];
+console.log("JSON CONTENT:");
+console.log(Manager.getAll());
 
-        // Get the application
+console.log("Looking for:", userId);
         const application = Manager.get(userId);
 
         if (!application) {
@@ -54,15 +59,35 @@ module.exports = {
                 inline: true
             });
 
-        await interaction.editReply({
-            embeds: [claimedEmbed],
-            components: interaction.message.components
-        });
+const { ActionRowBuilder, ButtonBuilder } = require("discord.js");
 
-        await interaction.followUp({
-            content: `✅ ${interaction.user} claimed this application.`,
-            ephemeral: false
-        });
+const rows = interaction.message.components.map(row => {
+    const newRow = new ActionRowBuilder();
+
+    row.components.forEach(component => {
+        const button = ButtonBuilder.from(component);
+
+        if (button.data.custom_id?.startsWith("application_claim:")) {
+            button
+                .setDisabled(true)
+                .setLabel(`Claimed by ${interaction.user.username}`);
+        }
+
+        newRow.addComponents(button);
+    });
+
+    return newRow;
+});
+
+await interaction.editReply({
+    embeds: [claimedEmbed],
+    components: rows
+});
+
+await interaction.followUp({
+    content: "✅ Application claimed successfully.",
+    ephemeral: true
+});
 
     }
 

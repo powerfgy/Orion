@@ -1,110 +1,106 @@
+const createInterviewTicket = require("../utils/createInterviewTicket");
+const {
+    EmbedBuilder,
+    ActionRowBuilder,
+    ButtonBuilder,
+} = require("discord.js");
 
-const { EmbedBuilder } = require("discord.js");
-
-const Roles = require("../config/roles");
 const Manager = require("../utils/applicationManager");
 
 module.exports = {
 
-   customId: "application_interview:",
+    customId: "application_interview:",
 
-async execute(interaction) {
+    async execute(interaction) {
 
-    await interaction.deferUpdate();
+        console.log("🔥 Interview button pressed");
+        console.log(interaction.customId);
+        console.log(interaction.user.id);
 
-    if (
-            !interaction.member.roles.cache.has(Roles.OWNER) &&
-            !interaction.member.roles.cache.has(Roles.COMMUNITY_MANAGER) &&
-            !interaction.member.roles.cache.has(Roles.LEAD_DEV)
-        ) {
+const allowedUsers = [
+    "1302435407681687613",
+    "1417278826609901678",
+    "1220824256032804924",
+    "1485437436208087070",
+    "1531222917462102177"
+];
 
-            return interaction.reply({
+if (!allowedUsers.includes(interaction.user.id)) {
+    return interaction.reply({
+        content: "❌ You cannot use this button.",
+        ephemeral: true
+    });
+}
 
-                content: "❌ You don't have permission.",
-
-                ephemeral: true
-
-            });
-
-        }
+await interaction.deferUpdate();
 
         const userId = interaction.customId.split(":")[1];
+
         console.log("========== BUTTON ==========");
-console.log("Button:", interaction.customId);
-console.log("User ID:", userId);
+        console.log("Button:", interaction.customId);
+        console.log("User ID:", userId);
+        console.log("JSON CONTENT:");
+        console.log(Manager.getAll());
 
-const application = Manager.get(userId);
+        console.log("Looking for:", userId);
 
-console.log("Application:", application);
+        const application = Manager.get(userId);
 
-console.log("✅ Application found");
-
+        console.log("Application:", application);
+        console.log("✅ Application found");
 
         if (!application) {
-
-            return interaction.reply({
-
-                content: "❌ Application not found.",
-
-                ephemeral: true
-
+            return interaction.editReply({
+                content: "❌ Application not found."
             });
-
         }
 
         Manager.setStatus(userId, "Interview");
 
-        const member = await interaction.guild.members.fetch(userId).catch(() => null);
+        await createInterviewTicket(
+            interaction,
+            application,
+            userId
+        );
 
-        if (member) {
+        // Keep all buttons, only disable Interview
+        const rows = interaction.message.components.map(row => {
 
-            try {
+            const newRow = new ActionRowBuilder();
 
-                await member.send({
+            row.components.forEach(component => {
 
-                    embeds: [
+                const button = ButtonBuilder.from(component);
 
-                        new EmbedBuilder()
+                if (button.data.custom_id?.startsWith("application_interview:")) {
+                    button.setDisabled(true);
+                }
 
-                            .setColor("#FEE75C")
+                newRow.addComponents(button);
 
-                            .setTitle("Interview Required")
+            });
 
-                            .setDescription(
+            return newRow;
 
-`Congratulations!
+        });
 
-Your application has passed the first stage.
+        await interaction.editReply({
 
-A staff member will contact you soon to schedule an interview.`
+            embeds: [
 
-                            )
+                EmbedBuilder.from(interaction.message.embeds[0])
 
-                    ]
+                    .setColor("#FEE75C")
 
-                });
+                    .setFooter({
+                        text: `Interview requested by ${interaction.user.tag}`
+                    })
 
-            } catch {}
+            ],
 
-        }
+            components: rows
 
-await interaction.editReply({
-
-    embeds: [
-
-        EmbedBuilder.from(interaction.message.embeds[0])
-
-            .setColor("#FEE75C")
-
-            .setFooter({
-                text: `Interview requested by ${interaction.user.tag}`
-            })
-
-    ],
-
-    components: []
-
-});
+        });
 
     }
 

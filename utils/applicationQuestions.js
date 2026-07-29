@@ -89,7 +89,7 @@ Artist: [
     { label: "Why You?", placeholder: "Why should we choose you?" }
 ],
 
-Video_Editor: [
+"Video Editor": [
     { label: "Age", placeholder: "How old are you?" },
     { label: "Timezone", placeholder: "What time zone are you in?" },
     { label: "Activity", placeholder: "How active are you each week?" },
@@ -412,6 +412,31 @@ Video_Editor: [
     { label: "Why Choose You", placeholder: "Why should Galaxy Games Inc. choose you over other applicants?" },
     { label: "Portfolio", placeholder: "Please provide examples of your previous work (portfolio, YouTube channel, social media accounts, graphics, trailers, etc.)." },
     { label: "Final Notes", placeholder: "Is there anything else you would like the Recruitment Team to know before reviewing your application?" }
+],
+"Trial Staff": [
+    { label: "Age", placeholder: "How old are you?" },
+    { label: "Weekly Activity", placeholder: "How active are you each week?" },
+    { label: "Moderation Experience", placeholder: "Do you have previous moderation experience? Please share examples if any (server, role, duration)." },
+    { label: "Previous Staff History", placeholder: "Have you ever been warned, demoted, or removed from a staff position before? If so, what happened?" },
+
+    { label: "First Rule Break", placeholder: "How would you handle a member breaking the rules for the first time?" },
+    { label: "Repeat Rule Breaker", placeholder: "How would you handle a member who keeps breaking rules after multiple warnings?" },
+    { label: "Unsure Situation", placeholder: "What would you do if you weren’t sure whether something broke the rules or not?" },
+    { label: "Wrong Punishment", placeholder: "What would you do if you accidentally punished someone unfairly?" },
+    { label: "Moderation Tools", placeholder: "Are you comfortable using moderation tools/commands (mute, warn, kick, ban)?" },
+
+    { label: "Public Argument", placeholder: "What would you do if you saw two members arguing in a public channel?" },
+    { label: "Insults", placeholder: "How would you handle a member insulting you directly while you’re moderating?" },
+    { label: "Disagrees With Decision", placeholder: "What would you do if a member disagreed with your decision and wanted to argue about it?" },
+
+    { label: "Working Under Staff", placeholder: "Are you comfortable working under Senior Staff and following their direction?" },
+    { label: "Disagreeing With Higher-Up", placeholder: "What would you do if you disagreed with a decision made by a higher-up?" },
+    { label: "Staff Communication", placeholder: "How would you communicate an issue to the rest of the staff team?" },
+    { label: "Asking For Help", placeholder: "Are you comfortable asking for help when you’re unsure how to handle something?" },
+    { label: "Staff Breaking Rules", placeholder: "How would you handle a fellow staff member breaking the rules?" },
+    { label: "False Punishment", placeholder: "A member says they were falsely punished by another staff member. How do you handle it?" },
+    { label: "Consistency", placeholder: "How would you make sure you stay consistent and fair with punishments?" },
+    { label: "Why You?", placeholder: "Why should we choose you for this position?" }
 ],
 };
 
